@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <title>Clínica Veterinária</title>
 </head>
 <body>
     <header>
         <h1>Clínica Veterinária</h1>
-        <button id="button-cadastro" onclick="cadastroPet()">Cadastro</button>
-        <button id="button-exibicao" onclick="exibicaoPet()">Exibição</button>
+        <button id="button-cadastro" onclick="showList()">Cadastro</button>
+        <button id="button-exibicao" onclick="showForm()">Exibição</button>
     </header>
 
     <div id="box-container">
         <h2>Cadastro de Pets</h2>
         <div id="div-Principal">
-            <label id="input-Tutor">Tutor:</label>
+            <label for="input-Tutor">Tutor:</label>
             <input type="text" id="input-Tutor" name="input-Tutor" class="input">
 
-            <label id="input-Pet">Nome do Pet:</label>
+            <label for="input-Pet">Nome do Pet:</label>
             <input type="text" id="input-Pet" name="input-Pet" class="input">
 
-            <label id="input-Especie">Espécie:</label>
+            <label for="input-Especie">Espécie:</label>
             <input type="text" id="input-Especie" name="input-Especie" class="input">
 
-            <label id="input-Foto"> Fotinha:</label>
+            <label for="input-Foto"> Fotinha:</label>
             <input type="text" id="input-Foto" name="input-Foto" class="input">
 
-            <label id="input-Data">Data de nascimento:</label>
+            <label for="input-Data">Data de nascimento:</label>
             <input type="date" id="input-Data" name="input-Data" class="input">
 
-            <button id="button-Cadastrar" onclick="buttonCadastro()">Cadastrar</button>
+            <button id="button-Cadastrar" onclick="registroPets()">Cadastrar</button>
         </div>
     </div>
+    <div id="div2" class="hidden">
+    <div id="containerLista">
+
+    </div>
+</div>
+    <footer id="footer-vet">
+        <h2>todos os direitos reservados</h2>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
